@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Leaderboards</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Server Leaderboard</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;background:#1e1f22}
@@ -10,24 +14,69 @@ main{width:100%;max-width:720px;margin-top:24px}
 .head img.icon{width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid rgba(0,0,0,.15);background:#4752c4}
 .head h1{margin:16px 0 0;font-size:28px;font-weight:700;letter-spacing:-.01em}
 ul{list-style:none;margin:0;padding:0}
-li{display:flex;align-items:center;gap:18px;padding:19px 28px}
+li{display:flex;align-items:center;gap:18px;padding:19px 28px;background:#2b2d31}
 li+li{border-top:1px solid #232428}
-.rank{width:40px;flex:0 0 40px;color:#b5bac1;font-size:18px;font-weight:700;font-variant-numeric:tabular-nums}
+.rank{width:40px;flex:0 0 40px;color:#b5bac1;font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;text-align:center}
 .avatar{width:44px;height:44px;flex:0 0 44px;border-radius:50%;overflow:hidden;background:#3f4147}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.mono-avatar{display:grid;place-items:center;width:100%;height:100%;font-size:17px;font-weight:700;color:#c9ccd1}
 .who{flex:1;font-size:17px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .amt{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
-.rose{width:20px;height:20px;display:block;mix-blend-mode:screen;filter:brightness(1.5) saturate(1.45) contrast(1.15)}
+.lunacy-emoji {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+}
 footer{margin:8px 0 0;color:#80848e;font-size:12px;text-align:center}
-@media (max-width:520px){li{padding:15px 16px;gap:12px}.avatar{width:38px;height:38px;flex-basis:38px}.who{font-size:15px}.amt{font-size:15px}.head h1{font-size:22px}.head img.icon{width:76px;height:76px}}
-</style></head><body><main>
+@media (max-width:520px){
+  li{padding:15px 16px;gap:12px}
+  .avatar{width:38px;height:38px;flex-basis:38px}
+  .who{font-size:15px}
+  .amt{font-size:15px}
+  .head h1{font-size:22px}
+  .head img.icon{width:76px;height:76px}
+}
+</style>
+</head>
+<body>
+<main>
 <div class="card">
   <div class="head">
-    <img class="icon" src="https://cdn.discordapp.com/icons/1551257248926269607/420276166db97af3ccd7b48c5b2dd7f3.png?size=256" alt="">
-    <h1>Hengs Shenanigans Leaderboard</h1>
+    <!-- Change this to your server's icon image link -->
+    <img class="icon" src="https://cdn.discordapp.com/icons/YOUR_SERVER_ID/YOUR_SERVER_ICON.png?size=256" alt="Server Icon">
+    <!-- Change this to your exact Discord Server Name -->
+    <h1>Limbus Shenanigans</h1>
   </div>
-  <ul><li><span class="who">Nobody has earned anything here yet.</span></li></ul>
+  <ul>
+    <li>
+      <span class="rank">#1</span>
+      <div class="avatar"><img src="https://cdn.discordapp.com/embed/avatars/0.png" alt=""></div>
+      <span class="who">lixergamin</span>
+      <span class="amt"><img class="lunacy-emoji" src="https://cdn.discordapp.com/emojis/1561346413428871318.png" alt="Lunacy"> 24,749</span>
+    </li>
+    <li>
+      <span class="rank">#2</span>
+      <div class="avatar"><img src="https://cdn.discordapp.com/embed/avatars/1.png" alt=""></div>
+      <span class="who">talkingballs</span>
+      <span class="amt"><img class="lunacy-emoji" src="https://cdn.discordapp.com/emojis/1561346413428871318.png" alt="Lunacy"> 3,203</span>
+    </li>
+    <li>
+      <span class="rank">#3</span>
+      <div class="avatar"><img src="https://cdn.discordapp.com/embed/avatars/2.png" alt=""></div>
+      <span class="who">.hanue</span>
+      <span class="amt"><img class="lunacy-emoji" src="https://cdn.discordapp.com/emojis/1561346413428871318.png" alt="Lunacy"> 2,492</span>
+    </li>
+    <li>
+      <span class="rank">#5</span>
+      <div class="avatar"><img src="https://cdn.discordapp.com/embed/avatars/3.png" alt=""></div>
+      <span class="who">n_r76</span>
+      <span class="amt"><img class="lunacy-emoji" src="https://cdn.discordapp.com/emojis/1561346413428871318.png" alt="Lunacy"> 1,246</span>
+    </li>
+  </ul>
 </div>
 <footer>Snapshot from the bot · 2026-10-18 16:26 UTC</footer>
-</main></body></html>
+</main>
+</body>
+</html>
