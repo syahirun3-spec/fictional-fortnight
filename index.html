@@ -1,24 +1,54 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hengs Shenanigans Leaderboard</title>
 <style>
-:root{color-scheme:dark}
-body{margin:0;background:#1e1f22;font-family:system-ui,Segoe UI,Roboto,sans-serif;color:#f2f3f5;display:flex;justify-content:center;padding:32px 12px}
-main{width:100%;max-width:720px}
-.head{background:#5865f2;border-radius:12px 12px 0 0;padding:28px 24px;text-align:center}
-.head h1{margin:8px 0 0;font-size:26px}
-ul{list-style:none;margin:0;padding:0;background:#2b2d31;border-radius:0 0 12px 12px;overflow:hidden}
-li{display:flex;align-items:center;gap:16px;padding:18px 24px;border-top:1px solid #1e1f22}
-.rank{width:44px;font-weight:700;color:#b5bac1}
-.who{flex:1;font-weight:600}
-.amt{font-variant-numeric:tabular-nums}
-.mono{font-family:ui-monospace,monospace;color:#b5bac1}
-h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:#b5bac1;margin:28px 0 10px}
+*{box-sizing:border-box}
+body{margin:0;background:#232428;color:#f2f3f5;font-family:"gg sans",system-ui,Segoe UI,Roboto,sans-serif;display:flex;justify-content:center;padding:28px 14px 64px}
+main{width:100%;max-width:640px}
+.card{background:#2b2d31;border-radius:16px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.head{background:linear-gradient(135deg,#5865f2,#4752c4);padding:34px 24px 28px;text-align:center}
+.head img.icon{width:88px;height:88px;border-radius:50%;border:4px solid rgba(255,255,255,.35);object-fit:cover;background:#3a3c42}
+.head h1{margin:14px 0 4px;font-size:27px;letter-spacing:-.02em}
+.head p{margin:0;opacity:.85;font-size:14px}
+ul{list-style:none;margin:0;padding:6px 0}
+li{display:flex;align-items:center;gap:14px;padding:12px 22px}
+li+li{border-top:1px solid #232428}
+.rank{width:34px;color:#b5bac1;font-weight:700;font-variant-numeric:tabular-nums}
+.avatar{width:38px;height:38px;flex:0 0 38px;border-radius:50%;overflow:hidden;background:#3a3c42}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.who{flex:1;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.amt{display:flex;align-items:center;gap:7px;font-variant-numeric:tabular-nums;font-weight:600}
+.rose{width:19px;height:19px;display:block}
+.mono{font-family:ui-monospace,monospace;color:#b5bac1;font-weight:400;font-size:13px}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#b5bac1;margin:30px 0 10px;padding-left:4px}
+.sec{background:#2b2d31;border-radius:16px;overflow:hidden}
+footer{margin-top:22px;color:#8a8f98;font-size:12px;text-align:center}
 </style></head><body><main>
-<div class="head"><h1>Hengs Shenanigans Leaderboard</h1><div>Lunacy, by cash and bank</div></div>
-<ul><li><span class="rank">#1</span><span class="who">1515622467178205198</span><span class="amt">🌹 4,387</span></li>
-<li><span class="rank">#2</span><span class="who">983898035505496145</span><span class="amt">🌹 1,041</span></li>
-<li><span class="rank">#3</span><span class="who">1414868295584317541</span><span class="amt">🌹 538</span></li></ul>
+<div class="card">
+  <div class="head">
+    
+    <h1>Hengs Shenanigans</h1>
+    <p>Lunacy Leaderboard · cash and bank</p>
+  </div>
+  <ul><li>
+  <span class="rank">#1</span>
+  <span class="avatar"></span>
+  <span class="who">Player 5198</span>
+  <span class="amt"><img class="rose" src="https://cdn.discordapp.com/emojis/1561346413428871318.png?size=48" alt="Lunacy"> 4,387</span>
+</li>
+<li>
+  <span class="rank">#2</span>
+  <span class="avatar"></span>
+  <span class="who">Player 6145</span>
+  <span class="amt"><img class="rose" src="https://cdn.discordapp.com/emojis/1561346413428871318.png?size=48" alt="Lunacy"> 1,041</span>
+</li>
+<li>
+  <span class="rank">#3</span>
+  <span class="avatar"></span>
+  <span class="who">Player 7541</span>
+  <span class="amt"><img class="rose" src="https://cdn.discordapp.com/emojis/1561346413428871318.png?size=48" alt="Lunacy"> 538</span>
+</li></ul>
+</div>
 <h2>Servers</h2>
-<ul><li><span class="who">Hengs Shenanigans</span><span class="amt mono">1551257248926269607</span></li></ul>
-<p class="mono">Generated 2026-10-18T15:29:42.240Z · snapshot, reload after the bot exports again.</p>
+<div class="sec"><ul><li><span class="avatar"><img src="https://cdn.discordapp.com/icons/1551257248926269607/420276166db97af3ccd7b48c5b2dd7f3.png?size=256" alt="" loading="lazy"></span><span class="who">Hengs Shenanigans</span><span class="amt mono">1551257248926269607</span></li></ul></div>
+<footer>Snapshot from the bot · 2026-10-18 15:45 UTC</footer>
 </main></body></html>
